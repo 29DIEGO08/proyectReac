@@ -1,4 +1,4 @@
-import {useRoute} from 'react-router-dom'
+import {useRoute, BroserRouter } from 'react-router-dom'
 import Home from '../Home'
 import MyAccount from '../MyAccount'
 import MyOrder from '../MyOrder'
@@ -19,8 +19,9 @@ const AppRoutes = () => {
 
 const App = () => {
   return (
-    
-    
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   )
 }
 
